@@ -20,7 +20,7 @@ import "github.com/reiver/go-skip"
 // In this example, we are skipping and leading space or tab characters.
 //
 // When you use it, you can choose other characters to skip.
-err := skip.SkipRunes(runescanner, " ", "\t")
+err := skip.SkipRunes(runescanner, ' ', '\t')
 ```
 
 ## Import
