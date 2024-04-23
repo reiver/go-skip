@@ -6,8 +6,8 @@ import (
 	"sourcecode.social/reiver/go-erorr"
 )
 
-// SkipRunes skips an leading runes that are in the cutset.
-func SkipRunes(runescanner io.RuneScanner, cutset ...rune) error {
+// AnyRunes skips zero, one, or more  leading runes that are in the cutset.
+func AnyRunes(runescanner io.RuneScanner, cutset ...rune) error {
 	if nil == runescanner {
 		return errNilRuneScanner
 	}

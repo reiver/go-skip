@@ -11,7 +11,7 @@ import (
 	"github.com/reiver/go-skip"
 )
 
-func TestSkipRune(t *testing.T) {
+func TestAnyRunes(t *testing.T) {
 
 	tests := []struct{
 		CutSet []rune
@@ -77,7 +77,7 @@ func TestSkipRune(t *testing.T) {
 
 		var runescanner io.RuneScanner = test.RuneScanner
 
-		err := skip.SkipRunes(runescanner, test.CutSet...)
+		err := skip.AnyRunes(runescanner, test.CutSet...)
 		if nil != err {
 			t.Errorf("For test #%d, did not expect an error but actually got one." , testNumber)
 			t.Logf("ERROR: (%T) %s", err, err)
