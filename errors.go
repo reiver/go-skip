@@ -5,6 +5,6 @@ import (
 )
 
 const (
-	errNilRuneScanner = erorr.Error("skip: rune scanner")
+	errNilRuneScanner = erorr.Error("skip: nil rune scanner")
 	errNoErrorNoRune  = erorr.Error("skip: problem reading rune: did not receive an error but also did not receive a rune")
 )
